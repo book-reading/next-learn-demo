@@ -13,3 +13,12 @@ export const Layout: React.FunctionComponent = (props: PropsWithChildren<any>) =
     {props.children}
   </div>
 );
+
+export const withLayout = (Page: any): React.FunctionComponent => {
+  return () => (
+    <div style={layoutStyle}>
+      <Header />
+      <Page />
+    </div>
+  );
+}

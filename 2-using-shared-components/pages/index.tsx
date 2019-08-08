@@ -1,12 +1,8 @@
 import React from 'react';
-import { Layout } from '../components/Layout';
+import { withLayout } from '../components/Layout';
 
 const IndexPage: React.FunctionComponent = () => (
-  <div>
-    <Layout>
-      <p>Hello Next.js</p>
-    </Layout>
-  </div>
+  <p>Hello Next.js</p>
 );
 
-export default IndexPage;
+export default withLayout(IndexPage);
